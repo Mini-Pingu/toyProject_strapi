@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fucking_us",
+  "info": {
+    "name": "FuckingU"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "FuckingNum": {
+      "type": "integer"
+    }
+  }
+}

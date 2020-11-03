@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/fucking-us",
+      "handler": "fucking-u.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fucking-us/count",
+      "handler": "fucking-u.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fucking-us/:id",
+      "handler": "fucking-u.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/fucking-us",
+      "handler": "fucking-u.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/fucking-us/:id",
+      "handler": "fucking-u.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/fucking-us/:id",
+      "handler": "fucking-u.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
