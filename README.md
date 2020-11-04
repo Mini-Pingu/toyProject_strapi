@@ -50,6 +50,10 @@
   4. [PM2 Cheatsheet](https://devhints.io/pm2) (救命手冊)
   5. [Create New Express.js Apps in Minutes with Express Generator](https://www.sitepoint.com/create-new-express-js-apps-with-express-generator/)
 
+  #### Repository:
+
+  1. [pm2](https://github.com/Mini-Pingu/pm2)
+
 - [x] ***Strapi*** 
 
   #### 策略:
@@ -74,6 +78,10 @@
   3. [strapi入门第一篇](https://blog.csdn.net/qq_41535611/article/details/107902915)
   4. [strapi入门——第二篇](https://blog.csdn.net/qq_41535611/article/details/107912549)
   5. [Strapi 学习](https://github.com/AutumnFish/strapi_study)
+
+  #### Repository:
+
+  1. [toyProject_strapi](https://github.com/Mini-Pingu/toyProject_strapi)
 
 - [x] ***PM2 部署並監控 Strapi***
 
@@ -100,7 +108,7 @@
 
 - [ ] ***PostgreSQL***
 
-  策略:
+  #### 策略:
 
   1. 使用 Docker 部署 PostgreSQL
   2. 使用 pgAdmin 可視化並 CRUD 其中數據
