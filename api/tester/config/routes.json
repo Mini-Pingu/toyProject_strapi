@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/fucking-us",
-      "handler": "fucking-u.find",
+      "path": "/testers",
+      "handler": "tester.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/fucking-us/count",
-      "handler": "fucking-u.count",
+      "path": "/testers/count",
+      "handler": "tester.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/fucking-us/:id",
-      "handler": "fucking-u.findOne",
+      "path": "/testers/:id",
+      "handler": "tester.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/fucking-us",
-      "handler": "fucking-u.create",
+      "path": "/testers",
+      "handler": "tester.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/fucking-us/:id",
-      "handler": "fucking-u.update",
+      "path": "/testers/:id",
+      "handler": "tester.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/fucking-us/:id",
-      "handler": "fucking-u.delete",
+      "path": "/testers/:id",
+      "handler": "tester.delete",
       "config": {
         "policies": []
       }

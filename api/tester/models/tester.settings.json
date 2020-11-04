@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Tester",
+  "info": {
+    "name": "Tester",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "lastName": {
+      "type": "string"
+    },
+    "tests": {
+      "collection": "test",
+      "via": "testers",
+      "dominant": true
+    }
+  }
+}
