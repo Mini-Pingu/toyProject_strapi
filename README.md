@@ -9,6 +9,8 @@
 
 > 注意: 因爲數據庫已從 SQLite 更換到 PostgreSQL (Docker version)，所以會有較大改動...
 
+[TOC]
+
 - [x] PM2 (進程管理工具)
 - [x] Strapi
   1. Postman 與 Strapi 溝通
@@ -141,10 +143,9 @@
   1. strapi 可以連接 db 並正常顯示  data
      1.  pgdb version 要 10
   2. 通過 strapi 修改  db 數據
+  3. 可以直接 docker-composed.yml (包括 strapi & postgresql)
 
   #### 結果:
-
-  1. 
 
   #### Upcoming:
 
@@ -156,6 +157,7 @@
   2. [How To Install PostgreSQL on Ubuntu 20.04 [Quickstart]](https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-20-04-quickstart)
   3. [How to Install & Configure Strapi with PostgreSQL](https://tute.io/install-configure-strapi-postgresql)
   4. [Strapi – Setup with Docker Postgres](https://danielcorcoranssql.wordpress.com/2020/04/23/strapi-setup-with-docker-postgres/)
+  5. [Installing using Docker](https://strapi.io/documentation/v3.x/installation/docker.html)
 
 - [ ] ***Tudis  serverCode***
 
