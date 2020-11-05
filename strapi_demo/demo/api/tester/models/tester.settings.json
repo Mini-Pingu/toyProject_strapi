@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "tests",
+  "collectionName": "testers",
   "info": {
-    "name": "test"
+    "name": "tester"
   },
   "options": {
     "increments": true,
@@ -10,15 +10,8 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "title": {
+    "name": {
       "type": "string"
-    },
-    "date": {
-      "type": "date"
-    },
-    "testers": {
-      "via": "tests",
-      "collection": "tester"
     }
   }
 }

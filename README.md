@@ -7,15 +7,20 @@
 
 搭建 human zoo 購買系統 :)
 
+> 注意: 因爲數據庫已從 SQLite 更換到 PostgreSQL (Docker version)，所以會有較大改動...
+
 - [x] PM2 (進程管理工具)
-- [x] Strapi (後端)
+- [x] Strapi
+  1. Postman 與 Strapi 溝通
 - [x] PM2 部署並監控 Strapi
-- [ ] PostgreSQL (數據庫)
-- [ ] Strapi & PostgreSQL 連接
+- [x] PostgreSQL (docker)
+- [x] Strapi & PostgreSQL (docker) 連接
   1. 更換 Strapi 原始數據庫 (SQLite -> PostgreSQL)
+  2. CRUD container 內數據
 - [ ] 學習 Tudis  serverCode (理清其中邏輯)
 - [ ] Next.js (前端)
-- [ ] Docker 微服務化
+- [ ] 前後端數據連接
+- [ ] Docker 微服務化全流程
 
 ## 流程
 
@@ -55,6 +60,8 @@
   1. [pm2](https://github.com/Mini-Pingu/pm2)
 
 - [x] ***Strapi*** 
+
+  1. Postman 與 Strapi 溝通
 
   #### 策略:
 
@@ -106,30 +113,57 @@
 
   1. N/A
 
-- [ ] ***PostgreSQL***
+- [x] ***PostgreSQL***
 
   #### 策略:
 
   1. 使用 Docker 部署 PostgreSQL
   2. 使用 pgAdmin 可視化並 CRUD 其中數據
+  
+  #### 結果:
+  
+  - [x] 部署 Pgdb docker
+  - [x] pgAdmin 監視 Pgdb
+  - [x] Update data
+  
+  #### Upcoming:
+  
+  1. ​	精準操控 db
+  
+  #### Reference:
+  
+  1. [PostgreSQL Tutorial](https://www.postgresqltutorial.com/)
 
----------------------------
+- [x] ***Strapi & PostgreSQL***
 
-## Undone:
+  #### 策略:
 
-- [ ] Srapi 連接 PostgreSQL
+  1. strapi 可以連接 db 並正常顯示  data
+     1.  pgdb version 要 10
+  2. 通過 strapi 修改  db 數據
 
-  [How to Install & Configure Strapi with PostgreSQL](https://tute.io/install-configure-strapi-postgresql)
+  #### 結果:
 
-  [How To Install PostgreSQL on Ubuntu 20.04 [Quickstart]](https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-20-04-quickstart)
+  1. 
 
-  PostgreSQL: [PostgreSQL Tutorial](https://www.postgresqltutorial.com/)
+  #### Upcoming:
 
-  **Upcoming**: 數據庫可視化: [pgAdmin](https://www.pgadmin.org/)
+  1. 每日備份數據庫 (docker volume 方法)
 
-- [ ] Next.js 前端搭建
+  #### Reference:
 
-- [ ] 前後端關聯
+  1. [How to Install & Configure Strapi with PostgreSQL](https://tute.io/install-configure-strapi-postgresql)
+  2. [How To Install PostgreSQL on Ubuntu 20.04 [Quickstart]](https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-20-04-quickstart)
+  3. [How to Install & Configure Strapi with PostgreSQL](https://tute.io/install-configure-strapi-postgresql)
+  4. [Strapi – Setup with Docker Postgres](https://danielcorcoranssql.wordpress.com/2020/04/23/strapi-setup-with-docker-postgres/)
+
+- [ ] ***Tudis  serverCode***
+
+- [ ] ***Next.js ...***
+
+- [ ] ***前後端數據連接***
+
+- [ ] ***Docker 微服務化全流程***
 
 ## References
 
